@@ -2,5 +2,5 @@ root: ./
 title: 'Uplife-api'
 description: 'uplife-api docs'
 structure:
-    readme: ../docsREADME.md
+    readme: ../README.md
     summary: ../docs/SUMMARY.md
