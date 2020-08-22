@@ -8,6 +8,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://ticlekiwi.github.io/API-Documentation-HTML-Template/css/hightlightjs-dark.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500|Source+Code+Pro:300" rel="stylesheet">
+        <link rel="stylesheet" href="https://ticlekiwi.github.io/API-Documentation-HTML-Template/css/style.css" media="all">
+        <script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 <body>
 <div class="jumbotron text-center">
@@ -18,8 +24,8 @@
 <br><br><br>
 
 <b>Start function</b><br>
-
-<code>
+<pre>
+<code class="js">
 const UP = require("uplife-api");<br>
 UP.start(<br>
   "[your Bot TOKEN]",<br>
@@ -39,18 +45,26 @@ UP.start(<br>
     economy: "true",<br>
     help: "true"<br>
   });<br>
-</code><br>
+</code></pre><br>
 
 <hr>
 <br>
 <b>Command header</b><br>
-<code>
+<pre><code class="js">
 const UP = require("uplife-api");<br>
 UP.commandHeader({<br>
   name: __dirname+"/commands",<br>
 })
-</code><br>
+</code></pre><br>
 Note: <i>start function then work command header</i>
+
+
+
+
+
+
+   <script src="https://ticlekiwi.github.io/API-Documentation-HTML-Template/js/libs/jquery.js"></script>
+   <script src="https://ticlekiwi.github.io/API-Documentation-HTML-Template/js/script.js"></script>
 
 </body>
 </html>
