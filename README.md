@@ -1,1 +1,1 @@
-[Click me get Offical docs](./index.html)
+[Click me get Offical docs](https://namekinggamerboy.github.io/uplife-api-docs/index.html)
