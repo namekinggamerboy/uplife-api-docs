@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Uplife api docs</title>
+</head>
+<body>
+<h1>uplife-api-docs</h1><<br>
+
+<hr>
+<br><br><br>
+
+<b>Start function</b><br>
+
+<code>
+const UP = require("uplife-api");<br>
+UP.start(<br>
+  "<your Bot TOKEN>",<br>
+  "<your prefix>,<br>
+  "<your user id>",<br>
+  {<br>
+    util: "true",<br>
+    mod: "true",<br>
+    giveaway: "true",<br>
+    reaction: "🎉",<br>
+    giveawaystorage: __dirname+"/giveaway.json",<br>
+    giveawayembed: "🎉🎉START GIVEAWAY🎉🎉",<br>
+    giveawaymessage: "🎉🎉start giveaway🎉🎉",<br>
+    participate: "click to 🎉 participate",<br>
+    music: "true",<br>
+    youtubekey: "your youtube api key",<br>
+    economy: "true",<br>
+    help: "true"<br>
+  }<br>
+);
+</code><br>
+
+<hr>
+<br>
+<b>Command header</b><br>
+<code>
+const UP = require("uplife-api");<br>
+UP.commandHeader({<br>
+  name: __dirname+"/commands",<br>
+})
+</code><br>
+Note: <i>start function then work command header</i>
+
+</body>
+</html>
