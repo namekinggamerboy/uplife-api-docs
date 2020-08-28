@@ -99,6 +99,7 @@ UP.commandHeader({<br>
 </code></pre><br>
 Note: <i>start function then work command header</i><br>
 <br><hr><br>
+Example-<br>
 <h6>commands/ping.js</h6><br>
 <pre><code class="js">
  const UP = require("uplife-api");
@@ -112,7 +113,7 @@ exports.command = {
 </code></pre><br><hr><br>
 <h3>commands options</h3><br><br>
   <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Bot</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><center>Click me</center></button>
 
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
@@ -121,12 +122,23 @@ exports.command = {
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Discord.js Client</h4>
+          <h4 class="modal-title">All option list</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
-        <div class="modal-body">All discord.js api option in Client</div>
+        <div class="modal-body"><pre><code class="js">
+option.bot - get discord.js client
+option.guilds - get gMessage guild info
+option.message - get command then message content show
+option.guilds - get bot all guild list
+option.author - get info from author
+option.emojis - get guilds emoji list
+option.discord - require discord.js package
+option.mentionUser - message content Frist mention user info show
+option.mentionChannel - message content Frist mention channel info show
+option.mentionRole - Frist mention role info show
+</code></pre></div>
         
         <!-- Modal footer -->
         <div class="modal-footer">
