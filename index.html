@@ -73,7 +73,25 @@ Note: <i>start function then work command header</i><br>
 <pre><code class="js">
 /* Start react role function */
 const UP = require("uplife-api");
-UP.reactRoleSetup(__dirname+"./reactionRole.json");
+UP.reactRoleSetup(__dirname+"/reactionRole.json");
+
+/* Create reaction role by message Id*/
+UP.reactionRoleCreate({
+messageId: "403303020202", /* replace your message id */
+msg: option.msg, /* or message */
+react: "💪", /* react */
+roleName: "power" /* role name */
+});
+
+/* Create reaction role by cmd */
+option.channel.send({ embed: {title: "click 💪 to get power role", color: "0099ff" }}).then(msg => {
+UP.reactionRoleCreate({
+messageId: msg.id,
+msg: option.msg, /* or message */
+react: "💪", /* react */
+roleName: "power" /* role name */
+})
+});
 </code></pre>
 
 
