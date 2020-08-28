@@ -24,15 +24,36 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500|Source+Code+Pro:300" rel="stylesheet">
         <link rel="stylesheet" href="https://ticlekiwi.github.io/API-Documentation-HTML-Template/css/style.css" media="all">
         <script>hljs.initHighlightingOnLoad();</script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="jumbotron text-center">
+<div class="container mt-3">
+  <div class="jumbotron text-center">
 <h1><b>UPLIFE API DOCS</b></h1><br>
 <p>Uplife api give best discord bot hosting script</p><br>
 </div>
 <hr>
 <br> <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Start script</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">custom header</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Start script</h3>
 
 <b><h2>Start function</h2></b><br>
 <pre>
@@ -57,9 +78,13 @@ UP.start(
     help: "true"
   });
 </code></pre><br>
+</div>
 
 <hr>
 <br>
+
+    <div id="menu3" class="container tab-pane fade"><br>
+      <h3>Command Header</h3>
 <b><h2>Command header</h2></b><br>
 <pre><code class="js">
 const UP = require("uplife-api");<br>
@@ -69,6 +94,8 @@ UP.commandHeader({<br>
 </code></pre><br>
 Note: <i>start function then work command header</i><br>
 <br><hr><br>
+</div>
+
 <b><h2>Ractin Role</h2></b><br>
 <pre><code class="js">
 /* Start react role function */
@@ -104,9 +131,8 @@ messageId: "403303020202"
 
 
 
-
+</div>
    <script src="https://ticlekiwi.github.io/API-Documentation-HTML-Template/js/libs/jquery.js"></script>
    <script src="https://ticlekiwi.github.io/API-Documentation-HTML-Template/js/script.js"></script>
-
 </body>
 </html>
